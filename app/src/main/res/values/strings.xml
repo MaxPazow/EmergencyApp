@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Emergency</string>
+    <string name="Siren">Siren!</string>
+    <string name="Help">Help!</string>
+    <string name="Whistle">Whistle!</string>
+
+</resources>
