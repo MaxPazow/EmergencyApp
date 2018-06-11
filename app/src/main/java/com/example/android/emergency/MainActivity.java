@@ -27,9 +27,13 @@ public class MainActivity extends AppCompatActivity {
         int maxVolume = audioManager.getStreamMaxVolume(audioManager.STREAM_MUSIC);
         int currentVolume = audioManager.getStreamVolume(audioManager.STREAM_MUSIC);
 
+        // sets up MediaPlayer for the siren sound
+
         final MediaPlayer sirenSound = MediaPlayer.create(this, R.raw.siren1);
         sirenSound.setLooping(true);
         Button playSiren = this.findViewById(R.id.siren);
+
+        // button press plays the siren sound, pressing button again stops
 
         playSiren.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
         final MediaPlayer whistle = MediaPlayer.create(this, R.raw.police_whistle);
         whistle.setLooping(true);
         Button playWhistle = this.findViewById(R.id.whistle);
+
+        // button press plays the whistle sound, pressing button again stops
 
         playWhistle.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,6 +74,8 @@ public class MainActivity extends AppCompatActivity {
         sendHelp.setLooping(true);
         Button playSendHelp = this.findViewById(R.id.help);
 
+        // button press plays the send help sound, pressing button again stops
+
         playSendHelp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -83,6 +91,9 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        //volume control bar
+
         SeekBar volumeControl = findViewById(R.id.volumeControl);
         volumeControl.setMax(maxVolume);
         volumeControl.setProgress(currentVolume);

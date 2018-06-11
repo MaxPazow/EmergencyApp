@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:padding="10dp"
+        android:padding="5dp"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:orientation="vertical">
@@ -65,24 +65,21 @@
         android:layout_marginBottom="7dp"
         android:layout_marginEnd="10dp"
         android:layout_marginStart="10dp"
-        android:background="@android:color/holo_purple"/>
+        android:background="#000000"/>
 
 
     <LinearLayout
         android:id="@+id/bottomButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal"
         android:padding="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="10dp"
         >
 
     <Button
         android:id="@+id/hospital"
-        android:layout_width="60dp"
+        android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_weight="1"
         android:onClick="hospital"
@@ -95,7 +92,7 @@
 
     <Button
         android:id="@+id/nine_one_one"
-        android:layout_width="60dp"
+        android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_weight="1"
         android:background="@drawable/nineoneone"
@@ -107,7 +104,7 @@
             android:layout_weight="1" />
         <Button
         android:id="@+id/location"
-        android:layout_width="60dp"
+        android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_weight="1"
         android:background="@drawable/gpsicon"
@@ -117,6 +114,7 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
     android:layout_marginStart="5dp"
     android:layout_marginEnd="5dp"
     android:gravity="bottom" >
